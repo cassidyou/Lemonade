@@ -1,0 +1,939 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Spline Sans', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0!important;
+}
+
+
+/* top bar */
+#top-bar .flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #FFFFFF;
+}
+.logo{
+    height: 50px;
+}
+.download-app-link{
+    background-color: #00A55E;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border-radius: 4px;
+    transition: .5s ease;
+}
+.download-app-link:hover{
+    outline: 1px solid #00A55E;
+    color: #00A55E;
+    background-color: #ffff;
+}
+
+/* navigation */
+.navigation{
+background-color: #E4E5E5;
+border-radius: 4px;
+
+}
+.navigation ul .active{
+    font-weight: 700;
+}
+.navigation ul{
+    padding: 10px;
+    height: 44px;
+    overflow: hidden;
+}
+
+.navigation ul li{
+    padding: 0px 15px;
+}
+
+.navigation a{
+    color: #2A2B30;
+
+}
+.navigation button{
+    background-color: transparent;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid #ffff;
+    border-radius: 3px;
+    padding: 2px 50px;
+}
+
+
+/* banner */
+#banner .row{
+    background: #FDF6EC;
+    padding: 100px 0px 20px 30px;
+    height: 450px;
+}
+
+#banner .col-md-4 h1{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 56px;
+    font-style: normal;
+}
+#banner .appdown{
+    margin-top: 40px;
+}
+
+#banner .col-md-8{
+    position: relative;
+}
+.man-and-family{
+    position: absolute;
+    width: 87%;
+    height: auto;
+    top: -25px;
+    left: -62px;
+    z-index: 1;
+}
+
+.lemonade-stand{
+    position: absolute;
+    width: 29%;
+    height: auto;
+    right: 15px;
+    z-index: 2;
+    top: 0px;
+}
+
+
+/* newsletter */
+#newsletter{
+    position: relative;
+}
+#newsletter .row{
+    background: #F1FCF4;
+   align-items: center;
+   justify-content: center;
+}
+
+.newsletter-heading{
+    font-weight: 700;
+    font-size: 30px;
+}
+#newsletter input[type="text"]{
+    padding: 12px 30px;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+}
+
+#newsletter button{
+    padding: 12px 20px;
+}
+#newsletter input[type="text"]:focus,
+#newsletter button{
+    box-shadow: none;
+    border-color: #0000;
+    border-color: #00A55E;
+}
+
+#newsletter img{
+    height: 80%;
+    width: auto;
+}
+.consent-msg{
+    font-size: 13px;
+}
+
+.privacy-link{
+    color: black;
+    text-decoration: underline;
+}
+.privacy-link:hover{
+    color: black;
+}
+
+
+/* latest Updates */
+#latest-update{
+    margin: 50px 0 0 0;
+}
+
+.load-post  a{
+    background: #2A2B30;
+    color: #ffff;
+    padding: 17px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: .5s ease-in-out;
+}
+.load-post a:hover{
+ 
+    color: #fff;
+    background-color: rgb(104, 104, 104);
+
+}
+
+
+
+/* footer */
+footer,.footer{
+    background: #FDF6EC;
+    padding: 60px 0 30px 0;
+    margin-top: 4rem!important;
+}
+.footer{
+    background: #FDF6EC;
+    padding: 60px 0 30px 0;
+    margin-top: 0.4rem!important;
+}
+
+
+
+
+
+/* Peoples Stories Page */
+.passion-project,
+.people-stories,
+.popular-culture,
+.people-of-lemonade,
+.product-updates{
+    position: relative;
+}
+.people-of-lemonade .col-lg-5{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+.product-updates .col-lg-5{
+    position: absolute;
+    right: 85px;
+    bottom: 0;
+}
+.popular-culture .col-lg-5{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+.people-stories .col-lg-5,
+.passion-project .col-lg-5
+{
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+}
+.people-stories .card,
+.popular-culture .card,
+.passion-project .card,
+.people-of-lemonade .card,
+.product-updates .card{
+    box-shadow: none;
+}
+
+.popular-culture{
+    position:relative;
+}
+
+.article-road-map{
+    margin-bottom: 50px;
+}
+.article-road-map a,
+.article-road-map span{
+    color: #2A2B30;
+    font-size: 20px;
+}
+
+
+.article-road-map .fa{
+    color: #000000;
+    font-size: 12px;
+}
+
+.article-road-map span{
+    color: #2A2B3080;
+    border-bottom: 2px solid;
+    font-weight: 700;
+
+}
+.article-showcase{
+    position:relative;
+    height: 170px;
+}
+.art-card{
+    position:absolute;
+    bottom: 0;
+}
+.article-showcase .card{
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.article .md-card-heading{
+    font-size: 3.125rem;
+}
+
+.date{
+    color: #03030580;
+    font-weight: 700;
+    display: block;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.p1{
+    font-size: 18px;
+}
+
+
+.card-social{
+    background: #F1FCF4;
+    padding: 40px 0 40px 40px;
+    border-radius: 4px;
+
+}
+
+.card-social h5{
+    color: #000000;
+    font-weight: 700;
+
+}
+
+.social-icons .fab{
+    font-size: 25px;
+    margin-right: 5px;
+    color: black;
+}
+
+.ycombinator{
+    padding-right: 20px;
+}
+
+.share-article{
+    padding-left: 60px;
+}
+
+.error-page{
+    background-color: #F1FCF4;
+    height: 651px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+}
+
+.err-num{
+    font-weight: 1000;
+    font-size: 20rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFE17180;
+    padding: 0 5px;
+
+}
+
+.err-msg{
+    font-weight: 700;
+    color: #03030599;
+    font-size: 48px;
+}
+.redirect{
+    color: #00A55E;
+    font-weight: 700;
+    border-bottom: 1.5px solid;
+    font-size: 22px;
+    margin: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.redirect:hover{
+   padding-bottom: 3px;
+   color: #00A55E;
+}
+
+.search-btn{
+    background-color: #FF44411A!important;
+    border: 2px solid red!important;
+}
+
+.search-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.search-img{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.search-msg{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.search-result-btn{
+    background-color: #ffff!important;
+    border: 1px solid #00A55E!important;
+}
+
+
+
+
+
+
+
+
+
+
+/* The overlay effect with black background 
+.overlay-background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+}
+
+
+
+/* The overlay effect with black background 
+.overlay {
+    height: 250px;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 150px;
+    left: 0;
+    background-color: #F1FCF4;
+  }
+  
+  /* The content 
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  /* Close button 
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+    
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  /* Style the search field 
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  .overlay input[type=text]:hover {
+    background: #f1f1f1;
+  }
+  
+   Style the submit button 
+  .overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
+  }
+*/
+
+
+#overlay-background{
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+}
+
+.overlay{
+    width: 100%;
+    top: 150px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: #F1FCF4;
+    height: 250px;
+    position: relative;
+    z-index: 1000;
+}
+.close-btn{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+    font-size: 30px;
+    z-index: inherit;
+    color: #292D32;
+    opacity: .6;
+}
+
+.overlay input[type="text"]{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-right: 2px solid #8E9492;
+    font-size: 30px;
+    color: #2A2B3080;
+    margin: 78px;
+    width: 200px;
+    transition-property: width, border-color,border-right-width;
+    transition: .5s ease-in-out;
+}
+.overlay input[type="text"]:focus{
+    width: 500px;
+    border-color: #00A55E;
+    border-right-width: 3px;
+}
+
+.overlay ::placeholder{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* utility classes */
+.light-underline {
+    position: relative;
+   
+}
+.light-underline span {
+    width: 58px;
+    position: absolute;
+    display: flow-root;
+    height: 4px;
+    right: -6px;
+    margin: auto;
+    top: 32px;
+    background: #F1FCF4;
+    border-radius: 4px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    --bs-gutter-x: 0;
+}
+
+
+.text-green{
+    color: #00A55E;
+}
+.bg-green{
+    background-color: #00A55E;
+}
+
+.card{
+    border: none;
+    box-shadow: 0px 4px 5px 0px #2A2B300D;
+    margin-right: 20px;
+}
+
+.card-body{
+    padding: 30px;
+}
+
+.card-heading{
+    font-size: 20px;
+}
+.md-card-heading{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.article-showcase .md-card-heading{
+    font-size: 3rem;
+}
+.card-right{
+    margin-left: 20px;
+    margin-right: 0!important;
+}
+.card img{
+    height: 180px;
+    width: auto;
+}
+
+.card .cat{
+    display: inline-block;
+    color: #2A2B30;
+    background: #FFE171;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.card .dark-cat{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #5F626E;
+    color: #ffff;
+
+}
+.read-more a{
+    font-weight: 700;
+    font-size: 12px;
+}
+.read-more a:hover{
+    color: #00A55E;
+}
+.heading{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+
+
+.chamfer, .chamfer-rt{
+    position: relative;
+}
+.chamfer::before,
+.chamfer::after{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: -25px;
+    right: 0px;
+    background-color: #ffff;
+    transform: skewY(-45deg);
+    -webkit-transform: skewY(-45deg);
+    -moz-transform: skewY(-45deg);
+    -ms-transform: skewY(-45deg);
+}
+
+    .chamfer-rt::before,
+    .chamfer-rt::after{
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: -25px;
+        right: 0px;
+        background-color: #ffff;
+        border-radius: 50px 0 0 0;
+        transform: skewY(45deg);
+        -webkit-transform: skewY(45deg);
+        -moz-transform: skewY(45deg);
+        -ms-transform: skewY(45deg);
+}
+
+
+
+
+/* Mobile screen*/
+@media screen and (max-width: 549px) {
+    #banner .col-md-4 h1{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    #banner .col-md-4 h1{
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    #top-bar .heading{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 403px) {
+    #banner .col-md-4 h1{
+        font-size: 29px;
+    }
+    #top-bar .download-app-link{
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    .logo{
+        height: 40px;
+    }
+    .appdown .download-app-link{
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+    #banner .row{
+        height: 400px!important;
+        padding: 10px!important;
+    }
+}
+
+
+@media screen and (max-width: 385px) {
+    #top-bar .download-app-link{
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    .logo{
+        height: 38px;
+        
+    }
+    .appdown .download-app-link{
+        font-size: 13px;
+       
+    }
+    #banner .appdown{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    #banner .col-md-4 h1{
+        font-size: 25px;
+    }
+  
+}
+
+@media screen and (max-width: 305px) {
+    #banner .col-md-4 h1{
+        font-size: 20px;
+    }
+    .appdown .download-app-link,
+    #top-bar .download-app-link{
+        font-size: 10px;
+        padding: 10px;
+    }
+    #top-bar .heading{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:395px) {
+    .navigation li a{
+        font-size: 14px;
+        padding: 0;
+    }
+}
+ @media screen and (max-width: 364px) {
+    .navigation li a{
+        font-size: 12px;
+        padding: 0;
+    }
+ }
+ @media screen and (max-width: 334px) {
+    .navigation li a{
+        font-size: 8px;
+        padding: 0;
+    }
+ }
+
+ @media screen and (max-width: 293px) {
+     .man-and-family,
+     .lemonade-stand{
+         margin-top: 30px;
+     }
+ }
+
+
+@media screen and (max-width: 767px) {
+    /* navigation */
+    .navigation{
+        height: 60px;
+        padding-top: 9px;
+    }
+    .navigation ul{
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 7px;
+        padding-top: 10px;
+        overflow: visible;
+    }
+    
+    /* banner */
+    #banner .row{
+        background: #FDF6EC;
+        height: 420px;
+        padding: 30px 10px;
+    }
+    .man-and-family{
+        position: absolute;
+        width: 87%;
+        height: auto;
+        top: -100px;
+        left: -34px;
+        z-index: 1;
+    }
+    
+    .lemonade-stand{
+        position: absolute;
+        width: 29%;
+        height: auto;
+        right: 5px;
+        z-index: 2;
+        top: -85px;
+    }
+    .card, .card-right{
+        margin: 0 0 40px 0;
+    }
+    .last-card{
+        margin: 0;
+    }
+    .card img{
+        height: 250px;
+        width: auto;
+    }
+    .marketing-story .col-lg-5{
+        right: 0!important;
+    }
+    .sm-mt-none{
+        margin-top: 0!important;
+    }
+    .load-post{
+        margin-top: 0!important;
+        padding: 10px 0 55px 0!important;
+        
+    }
+    .load-post a{
+        margin-top: 0!important;
+    }
+    .article-showcase .cat{
+        display: none;
+    }
+    
+    .article-showcase{
+        height: 160px;
+    }
+    .art-card{
+        position: relative;
+        top: 0;
+    }
+    #ycomb{
+        margin-top: 5rem;
+    }
+    .card-social{
+        background: #Ffff;
+        border-radius: 4px;
+        padding: 8px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #2A2B3080;
+    }
+    .social-icons .fab{
+        font-size: 28px;
+        margin-right: 7px;
+        color: #00A55E;
+
+    }
+    
+    .ycombinator{
+        padding-right: 0;
+    }
+    
+    .share-article{
+        padding-left: 0;
+    }
+    .error-page{
+        height: 325.5px;
+      
+    
+    }
+    .err-num{
+        font-size: 10rem;
+    }
+    .err-msg{
+        font-size: 24px;
+    }
+    .redirect{
+        font-size: 11px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 991px){
+    .chamfer::before,
+    .chamfer::after{
+    top: -25px;
+    border-radius: 50px 0 0 0;
+    transform: skewY(45deg);
+    -webkit-transform: skewY(45deg);
+    -moz-transform: skewY(45deg);
+    -ms-transform: skewY(45deg);
+}
+.people-stories .col-lg-5,
+.passion-project .col-lg-5,
+.popular-culture .col-lg-5,
+.people-of-lemonade .col-lg-5,
+.product-updates .col-lg-5{
+    position: relative;
+    right: 0;
+}
+.article-showcase .md-card-heading{
+    font-size: 1.8rem!important;
+}
+
+}
+
+
+

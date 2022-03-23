@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Bootstrap CSS CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap Icon CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!--Fontawsome CSS CDN-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="image/png" href="images/logo.PNG">
+    <!--Google font CDN    // Spline Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Spline+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Product Updates</title>
+</head>
+<body>
+<!--top bar-->
+<section id="top-bar" class="">
+    <div class="container">
+        <div class="flex">
+            <div class="flex">
+                <a href="index.html">
+                    <img src="images/logo.PNG" class="logo" alt="logo">
+                </a>
+               
+            </div>
+            <a href="" class="download-app-link">Download the app</a>
+        </div>
+        <br>
+        <br>
+        <div class="row page-heading">
+            <div class="col-12 text-center">
+                <h1 class="heading text-green">
+                  Product Updates.
+                </h1>
+                <p>
+                    We're constantly making Lemonade better every single week. This is where we
+                    <br>
+                    announce new features and product enhacements!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="overlay-background" style="display: none;">
+    <div class="overlay">
+        <button class="close-btn" onclick="closeSearch()" title="Cancel">
+            <i class="far fa-times-circle"></i>
+        </button>
+        <form action="">
+            <input type="text" name="keywords" placeholder="Search post" title="Enter keywords to search">
+        </form>
+    </div>
+</div>
+
+<!--navbar-->
+<div class="container d-none d-md-block">
+    <nav class="navigation">
+           <ul  class="flex">
+               <li>
+                   <a href="index.html">All</a>
+                 </li>
+               <li>
+                   <a href="peoples-story.html">People Stories</a> 
+                </li>
+               <li>
+                   <a href="passion-projects.html" >Passion Projects</a> 
+                   <span class="light-underline d-md-none">
+                       <span></span>
+                   </span>
+                </li>
+               <li class="d-none d-md-block">
+                   <a href="popular-culture.html" >Popular culture</a>
+                 </li>
+               <li class="d-none d-md-block">
+                   <a href="people-of-lemonade.html" >People of Lemonade</a>
+                 </li>
+               <li class="d-none d-lg-block">
+                   <a href="product-updates.html" class="active">Product Updates</a>
+                 </li>
+               <li class="d-none d-lg-block">
+                   <button onclick="openSearch()">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <span>Search</span>
+                   </button>
+               </li>
+           </ul>
+    </nav>
+</div>
+
+
+    <div class="container">
+        <div class="row mt-5 product-updates">
+            <div class="col-md-6 col-lg-7 chamfer-rt">
+                <img src="images/Product Update 1.png" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <div class="card">
+                    <div class="card-body">
+                        <span class="cat">
+                            Category
+                        </span>
+                        <h5 class="md-card-heading">The lemonade team created an  API for making babies</h5>
+                        <p>
+                            Power up your team, further your career and build your digital HQ for the work-from-anywhere world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+<!--post-->
+<section id="post">
+    <div class="container">
+        <div class="row  sm-mt-none">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/product-update.png" class="img-fluid d-none d-md-block">
+                    <img src="images/bird.png" class="img-fluid d-md-none d-block">
+                    <div class="card-body">
+                        <span class="cat">
+                            Category
+                        </span>
+                        <h5 class="card-heading">The lemonade team created an  API for making babies</h5>
+                        <p>
+                            Power up your team, further your career and build your digital HQ for the work-from-anywhere world.
+                        </p>
+                        <span class="d-block read-more">
+                            <a href="" class="text-green">Read article</a>
+                        </span>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mx-2">
+                    <img src="images/product-update.png" class="img-fluid d-none d-md-block">
+                    <img src="images/animal.png" class="img-fluid d-md-none d-block">
+                    <div class="card-body">
+                        <span class="cat">
+                            Category
+                        </span>
+                        <h5 class="card-heading">The lemonade team created an  API for making babies</h5>
+                        <p>
+                            Power up your team, further your career and build your digital HQ for the work-from-anywhere world.
+                        </p>
+                        <span class="d-block read-more">
+                            <a href="" class="text-green">Read article</a>
+                        </span>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <div class="card card-right">
+                    <img src="images/product-update.png" class="img-fluid d-none d-md-block">
+                    <img src="images/bird.png" class="img-fluid d-none">
+                    <div class="card-body ">
+                        <span class="dark-cat">
+                            Category
+                        </span>
+                        <h5 class="card-heading">The lemonade team created an  API for making babies</h5>
+                        <p>
+                            Power up your team, further your career and build your digital HQ for the work-from-anywhere world.
+                        </p>
+                        <span class="d-block read-more">
+                            <a href="" class="text-green">Read article</a>
+                        </span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="row sm-mt-none">
+            <div class="col-md-4 d-none d-md-block">
+                <div class="card">
+                    <img src="images/product-update.png" class="img-fluid d-none d-md-block">
+                    <img src="images/bird.png" class="img-fluid d-none">
+                    <div class="card-body">
+                        <span class="cat">
+                            Category
+                        </span>
+                        <h5 class="card-heading">The lemonade team created an  API for making babies</h5>
+                        <p>
+                            Power up your team, further your career and build your digital HQ for the work-from-anywhere world.
+                        </p>
+                        <span class="d-block read-more">
+                            <a href="" class="text-green">Read article</a>
+                        </span>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <div class="card mx-2">
+                    <img src="images/product-update.png" class="img-fluid d-none d-md-block">
+                    <img src="images/animal.png" class="img-fluid d-none">
+                    <div class="card-body">
+                        <span class="cat">
+                            Category
+                        </span>
+                        <h5 class="card-heading">The lemonade team created an  API for making babies</h5>
+                        <p>
+                            Power up your team, further your career and build your digital HQ for the work-from-anywhere world.
+                        </p>
+                        <span class="d-block read-more">
+                            <a href="" class="text-green">Read article</a>
+                        </span>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <div class="card card-right">
+                    <img src="images/product-update.png" class="img-fluid d-none d-md-block">
+                    <img src="images/bird.png" class="img-fluid d-none">
+                    <div class="card-body ">
+                        <span class="cat">
+                            Category
+                        </span>
+                        <h5 class="card-heading">The lemonade team created an  API for making babies</h5>
+                        <p>
+                            Power up your team, further your career and build your digital HQ for the work-from-anywhere world.
+                        </p>
+                        <span class="d-block read-more">
+                            <a href="" class="text-green">Read article</a>
+                        </span>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 py-5 my-3 load-post text-center">
+                <a href="">
+                    Load more posts 
+                </a>
+            </div>
+    </div>
+</section>
+
+
+<!--newsletter -->
+<section id="newsletter">
+    <div class="container">
+        <div class="row chamfer mb-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="row pt-5">
+                    <div class="col-lg-6">
+                        <h3 class="text-green newsletter-heading">
+                            Stay updated with Lemonade 
+                            <br> 
+                            by signing up for our newsletter
+                        </h3>
+                        <p>
+                            we'll keep you in the loop with everything good going on in the world.
+                        </p>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="jahndoe@gmail.com" aria-label="Recipient's email" aria-describedby="button-addon2">
+                                <button class="btn bg-green text-light" type="button" id="button-addon2">
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                </button>
+                              </div>
+                        </form>
+                        <p class="consent-msg">
+                            By submitting this newsletter request, I consent to Lemonade Finance sending me marketing communication via email. 
+                            I may opt out any time. View Lemonade's <a href="" class="privacy-link">Privacy Policy.</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-6  d-none d-lg-block">
+                        <span class="d-block mx-5">
+                            <img src="images/newsletter 1.png" class="img-fluid " alt="newsletter">
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>
+                    Lemonade Technology Ltd U.k (No.935815) is authorised by the Financial Conduct Authority as a Small Payment Institution (Reference 900562).
+                     Registered address: Incorporated on 1 July 2020. 36-38 Westbourne Grove Newton Road, London, United Kingdom, W2 5SH.
+                     <br>
+                     <br>
+                     Lemonade Technology Limited, Canada, is regisered and regularised by the Financial Transactions and Report Analysis Centre of Canada
+                     as a Money Service Business. MSB registration number: M20383642. Lemonade Technology Limited, Canada. &copy; 2021 All Rights Reserved
+                </p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+<script>
+    function openSearch(){
+    let search = document.getElementById("overlay-background");
+        search.style.display = "block";
+}
+function closeSearch(){
+    let search = document.getElementById("overlay-background");
+    search.style.display = "none";
+}
+</script>
+
+
+
+    <!--Bootstrap JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
